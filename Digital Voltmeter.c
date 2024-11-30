@@ -1,5 +1,6 @@
 #include<reg51.h>
 #include"lcd.h"
+#include<stdio.h>
 #define lcd_port P2
 sbit rs=P3^0;
 sbit rw=P3^1;
@@ -76,6 +77,7 @@ void hex2lcd(unsigned char hex){
 	temp2 = temp1+10;
 	lcd_data(temp2+0x30);
 }
+
 
 #define adc_port P1              //ADC Port
 
