@@ -1,5 +1,6 @@
 #include<reg51.h>
 #include"lcd.h"
+#include<stdio.h>
 #define lcd_port P2
 sbit rs=P3^0;
 sbit rw=P3^1;
@@ -107,7 +108,6 @@ void read()
 
 void main()
 {
-	int a;
 	char i;
 	lcd_init();
 	lcd_string("Voltmeter");
