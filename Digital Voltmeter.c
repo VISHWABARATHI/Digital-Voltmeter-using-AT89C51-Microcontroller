@@ -107,6 +107,7 @@ void read()
 
 void main()
 {
+	int a;
 	char i;
 	lcd_init();
 	lcd_string("Voltmeter");
